@@ -14,6 +14,15 @@ body {
     margin-right: 13%;
 }
 
+a {
+    color: yellow;
+}
+
+a:hover {
+    color: yellow;
+    text-decoration: underline;
+}
+
 .content a {
     color: yellow;
 }
@@ -46,16 +55,6 @@ body {
 .content .siteTitle {
     text-decoration: underline;
     color: darkorange
-}
-
-a {
-    color: whitesmoke;
-    text-decoration: none;
-}
-
-a:hover {
-    color: lightcyan;
-    text-decoration: none;
 }
 
 .title {
