@@ -6,3 +6,4 @@ Disallow: /404.html
 Disallow: /impressum/
 Disallow: /README.md
 Disallow: /admin/
+Disallow: /style/fonts
