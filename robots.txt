@@ -1,9 +1,10 @@
 # This robots.txt file controls crawling of URLs under https://service.chrispri.de.
 User-agent: *
-Disallow: /
+Disallow: /geraete/
 Disallow: /go/
 Disallow: /404.html
 Disallow: /impressum/
 Disallow: /README.md
 Disallow: /admin/
 Disallow: /style/fonts
+Disallow: /dateien/disallow/
