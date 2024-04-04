@@ -8,3 +8,4 @@ Disallow: /README.md
 Disallow: /admin/
 Disallow: /style/fonts
 Disallow: /dateien/disallow/
+Disallow: /z_musterordner/
