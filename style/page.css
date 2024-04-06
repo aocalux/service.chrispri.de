@@ -4,14 +4,9 @@ body {
     font-size: larger;
 }
 
-.isActive {
-    color: darkorange;
-    text-decoration: underline;
-}
-
 .content {
-    margin-left: 13%;
-    margin-right: 13%;
+    margin-left: 7%;
+    margin-right: 7%;
 }
 
 a {
@@ -59,8 +54,8 @@ a:hover {
 
 .title {
     text-align: center;
-    margin-left: 10%;
-    margin-right: 10%;
+    margin-left: 6%;
+    margin-right: 6%;
     font-weight: bold;
     font-size: 300%;
     margin-top: 2%;
@@ -71,13 +66,17 @@ a:hover {
 
 .topbar {
     text-align: center;
-    font-size: x-large;
-    font-weight: bold;
-    background-color: darkslategrey;
-    margin-top: 25px;
-    margin-left: 10%;
-    margin-right: 10%;
-    color: whitesmoke;
+    margin-left: 6%;
+    margin-right: 6%;
+    color: lightgray;
+}
+
+.topbar a {
+    color: lightgray;
+}
+
+.topbar a:hover {
+    text-decoration: underline;
 }
 
 .bottombar {
@@ -85,8 +84,8 @@ a:hover {
     font-weight: normal;
     color: lightgray;
     font-size: small;
-    margin-left: 10%;
-    margin-right: 10%;
+    margin-left: 6%;
+    margin-right: 6%;
 }
 
 .bottombarTrenner {

@@ -1,0 +1,14 @@
+.isActive a {
+    color: darkorange;
+    font-weight: bold;
+}
+
+a {
+    color: whitesmoke;
+    text-decoration: none;
+}
+
+a:hover {
+    color: lightcyan;
+    text-decoration: none;
+}
