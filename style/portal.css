@@ -1,0 +1,35 @@
+body {
+    align-content: center;
+    zoom: 1.4;
+}
+
+.center {
+    align-content: center;
+    align-items: center;
+    text-align: center;
+    margin-top: 2.5%;
+}
+
+.links {
+    margin-left: 10%;
+    margin-right: 10%;
+    display: grid;
+    gap: 40px 20px;
+    grid-template-columns: auto auto auto auto;
+    padding: 10px;
+}
+
+.link {
+    border: 8px;
+    border-color: #454141;
+    background-color: #292828;
+    border-style: solid;
+    border-radius: 5%;
+    width: 80%;
+}
+
+.link a {
+    color: whitesmoke;
+    text-decoration: none;
+    font-size: larger;
+}
