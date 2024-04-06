@@ -3,6 +3,19 @@ body {
     zoom: 1.4;
 }
 
+.legal a {
+    overflow: hidden;
+    position: fixed;
+    bottom: 0;
+    right: 0;
+    margin: 0.15%;
+    margin-bottom: 0.6%;
+    margin-right: 0.6%;
+    font-size: x-small;
+    color: gray;
+    text-decoration: none;
+}
+
 .center {
     align-content: center;
     align-items: center;
@@ -32,4 +45,8 @@ body {
     color: whitesmoke;
     text-decoration: none;
     font-size: larger;
+}
+
+a:hover {
+    text-decoration: underline;
 }
