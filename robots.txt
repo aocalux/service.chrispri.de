@@ -9,4 +9,4 @@ Disallow: /admin/
 Disallow: /style/fonts
 Disallow: /dateien/disallow/
 Disallow: /z_musterordner/
-Disallow: /
+Disallow: z_Impressum.html
