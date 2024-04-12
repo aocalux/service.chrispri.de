@@ -1,0 +1,99 @@
+body {
+	background-color: #141414;
+	text-align: center;
+	font-size: x-large;
+	color: whitesmoke;
+}
+
+.topBar {
+	margin: 15px 15px;
+}
+
+.barLeft {
+	float:left;
+	margin: 5px 0px;
+}
+
+.barRight {
+	float:right;
+}
+
+.linkButton {
+	background-color: darkslateblue;
+  	padding: 10px;
+  	text-decoration: none;
+  	display: inline-block;
+  	border-radius: 10px;
+}
+
+.linkButton:hover {
+	background-color: rgb(75, 75, 75);
+	color: white;
+	text-decoration: none;
+}
+
+.logo {
+	font-size: 80;
+}
+
+input {
+	background-color: rgb(40, 40, 40);
+	font-size: large;
+	color: white;
+	border: solid;
+	border-radius: 10px;
+}
+
+.searchButton:hover {
+	border-color: rgb(180, 180, 180);
+	background-color: rgb(75, 75, 75);
+}
+
+.searchBox {
+	width: 600px; 
+	height: 40px;
+}
+
+.searchButton {
+	width: 115px; 
+	height: 40px;
+}
+
+.credit a {
+	position: fixed;
+	bottom: 0;
+    right: 0;
+    margin: 0.15%;
+    margin-bottom: 0.4%;
+    margin-right: 0.6%;
+    font-size: small;
+    color: gray;
+    font-style: italic;
+}
+
+.legal {
+	position: fixed;
+	bottom: 0;
+    left: 0;
+    margin: 0.15%;
+    margin-bottom: 0.4%;
+    margin-left: 1%;
+    font-size: small;
+    color: gray;
+}
+
+.legal a {
+	font-size: x-small;
+    color: gray;
+}
+
+a {
+	text-decoration: none;
+	font-size: large;
+	color: white;
+}
+
+a:hover {
+	text-decoration: underline;
+	color: gray;
+}
