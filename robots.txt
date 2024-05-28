@@ -11,3 +11,4 @@ Disallow: /dateien/disallow/
 Disallow: /index-full.html
 Disallow: /z_musterordner/
 Disallow: z_Impressum.html
+Disallow: /musik/
