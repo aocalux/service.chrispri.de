@@ -21,11 +21,11 @@ gap: 5px;
 .entry {
     border: 5px;
     border-radius: 8px;
-    border-color: rgba(245, 245, 245, 0.273);
+    border-color: rgba(245, 245, 245, 0.16);
     border-style: solid;
     width: 95%;
     text-align: center;
-    background-color: #1b1b1b83;
+    background-color: #1b1b1b73;
     margin-bottom: 14px;
     font-size: larger;
 }
