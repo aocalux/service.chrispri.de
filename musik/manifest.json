@@ -1,4 +1,16 @@
 {
+    "name": "Musik - ChrisPri.de",
+    "short_name": "Musik",
+    "start_url": "./",
+    "scope": "./",
+    "description": "Musik",
+    "lang": "de-DE",
+    "id": "35rwegrthtrh",
+    "orientation": "any",
+    "display": "standalone",
+    "display_override": [
+        "window-controls-overlay"
+    ],
     "theme_color": "#8936FF",
     "background_color": "#2EC6FE",
     "icons": [
@@ -14,13 +26,5 @@
             "src": "icon512_rounded.png",
             "type": "image/png"
         }
-    ],
-    "orientation": "any",
-    "display": "standalone",
-    "dir": "auto",
-    "lang": "de-DE",
-    "name": "Musik - ChrisPri.de",
-    "short_name": "Musik",
-    "start_url": "https://service.chrispri.de/musik/",
-    "scope": "https://service.chrispri.de/musik/"
+    ]
 }
