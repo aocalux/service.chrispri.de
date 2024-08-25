@@ -1,15 +1,97 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Verlorener Laptop gefunden</title>
-    <link rel="stylesheet" href="/style/page.css">
-    <link rel="stylesheet" href="/style/fonts.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="shortcut icon" href="/img/fav.png" type="image/x-icon">
+    <title>Impressum & Datenschutz Umleitung | ChrisPri.de</title>
+    <style>
+        body {
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            background-color: #141414;
+            height: 97vh;
+            display: grid;
+        }
+
+        .button-container {
+            display: grid;
+            justify-content: center;
+        }
+
+        .button {
+            margin: 30px;
+            padding: 35px;
+            max-width: 800px;
+            min-width: 800px;
+            background-color: #7218c7;
+            color: rgb(226, 226, 226);
+            border: none;
+            cursor: pointer;
+            border-radius: 5px;
+            font-size: 160%;
+        }
+
+        @media only screen and (max-width: 850px) {
+            .button {
+                max-width: 700px;
+                min-width: 700px;
+            }
+        }
+
+        @media only screen and (max-width: 750px) {
+            .button {
+                max-width: 600px;
+                min-width: 600px;
+            }
+        }
+
+        @media only screen and (max-width: 650px) {
+            .button {
+                max-width: 500px;
+                min-width: 500px;
+            }
+        }
+
+        @media only screen and (max-width: 550px) {
+            .button {
+                max-width: 400px;
+                min-width: 400px;
+            }
+        }
+
+        @media only screen and (max-width: 450px) {
+            .button {
+                max-width: 300px;
+                min-width: 300px;
+            }
+        }
+
+        @media only screen and (max-width: 350px) {
+            .button {
+                max-width: 200px;
+                min-width: 200px;
+            }
+        }
+
+        .button:hover {
+            background-color: #7218c7d7;
+        }
+    </style>
 </head>
 <body>
-    <a href="http://gochris.li/impressum">Impressum</a>
-    &nbsp;&nbsp;|&nbsp;&nbsp;
-    <a href="http://gochris.li/datenschutz">Datenschutz</a>
+    <div class="button-container">
+        <a href="https://gochris.li/kontakt" target="_blank">
+            <button class="button">&nbsp; Kontakt &nbsp;</button>
+        </a>
+        <a href="https://gochris.li/impressum" target="_blank">
+            <button class="button">Impressum</button>
+        </a>
+        <a href="https://gochris.li/datenschutz" target="_blank">
+            <button class="button">Datenschutz</button>
+        </a>
+    </div>
+
 </body>
 </html>
