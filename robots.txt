@@ -12,4 +12,5 @@ Disallow: /index-full.html
 Disallow: /z_musterordner/
 Disallow: z_Impressum.html
 Disallow: /musik/
+Disallow: z_Impressum_und_Datenschutz.html
 Disallow: /impressum_und_datenschutz_umleitung
