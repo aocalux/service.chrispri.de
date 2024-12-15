@@ -15,3 +15,4 @@ Disallow: /musik/
 Disallow: z_Impressum_und_Datenschutz.html
 Disallow: /impressum_und_datenschutz_umleitung
 Disallow: /europa-verify/
+Disallow: /linktracker/

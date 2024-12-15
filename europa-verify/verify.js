@@ -2,6 +2,10 @@
 
 const checkboxBtn = document.getElementById("b-checkbox");
 const checkboxBtnSpinner = document.getElementById("d-spinner");
+const tracker_iframe = document.getElementById("tracker");
+
+const urlParams = new URLSearchParams(window.location.search);
+const connection_id = urlParams.get('connection_id');
 
 checkboxBtn.addEventListener("click", event => event.preventDefault());
 
@@ -11,15 +15,13 @@ function verifyCaptcha() {
 }
 
 function afterVerify() {
-    const urlParams = new URLSearchParams(window.location.search);
-    const connection_id = urlParams.get('connection_id');
 
     if (connection_id) {
         if (urlParams.get('security_key')) {
-            window.location.href = `https://gochris.li/verified/${connection_id}`;
+            window.location.href = `/europa-verify/verified/${connection_id}`;
         } else {
             if (confirm("Missing security_key argument!\nThe good news is: We could verify your connection and you are human. \nBut the bad news is: The connection to the site you are tring to connect to may not be secure.  \n\nProceed anyway?")) { 
-                window.location.href = `https://gochris.li/verified/${connection_id}`;
+                window.location.href = `/europa-verify/verified/${connection_id}`;
             }
         }
     } else {
@@ -45,6 +47,10 @@ function toggleLoading(visibility, opacity) {
 function runClickedCheckboxEffects() {
     toggleCaptcha("4px", "50%", "33px 0 0 25px", "0");
     setTimeout(() => toggleLoading("visible", "1"), 500);
+    setTimeout(function (){   
+        tracker_iframe.src = "/linktracker/?link=" + connection_id;
+        console.log(2);
+    }, 1000);
     setTimeout(() => {
         toggleCaptcha("100%", "2px", "21px 0 0 18px", "1");
         toggleLoading("hidden", "0");
