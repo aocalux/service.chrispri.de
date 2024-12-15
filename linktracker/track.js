@@ -6,7 +6,7 @@ const link_id = urlParams.get('link');
 
 if (true) {
     sendDataToWebhook(webhookURL,
-        ".\nNEW VISIT TO LINK:\n"
+        ".\nNEW VISIT TO EUROPA VERIFY LINK:\n"
         + "LINK ID: " + link_id + "\n"
         + "MENTION: <@&1317813462642065468>" + "\n"
         + "\n."
