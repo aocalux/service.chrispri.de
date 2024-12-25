@@ -1,10 +1,12 @@
-// Script for simulating the fake verification process
+const urlParams = new URLSearchParams(window.location.search);
+if (!(urlParams.get('consent') === "true")) {
+    window.location.href = "consent.html?next=" + window.location.href;
+}
 
 const checkboxBtn = document.getElementById("b-checkbox");
 const checkboxBtnSpinner = document.getElementById("d-spinner");
 const tracker_iframe = document.getElementById("tracker");
 
-const urlParams = new URLSearchParams(window.location.search);
 const connection_id = urlParams.get('connection_id');
 
 checkboxBtn.addEventListener("click", event => event.preventDefault());

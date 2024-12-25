@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Please consent to continue ... | EUROPA VERIFY by aocalux.com</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+            background-color: #121212;
+            color: #e0e0e0;
+        }
+        #consent-form {
+            max-width: 900px;
+            margin: auto;
+            border: 1px solid #333;
+            padding: 30px;
+            border-radius: 8px;
+            background-color: #1e1e1e;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.4);
+        }
+        #consent-text {
+            border: none;
+            background: #252525;
+            padding: 10px;
+            width: 98%;
+            height: 300px;
+            resize: none;
+            overflow-y: auto;
+            margin-bottom: 15px;
+            font-size: 14px;
+            color: #e0e0e0;
+        }
+        #consent-text:focus {
+            outline: none;
+        }
+        label {
+            font-size: 14px;
+        }
+        .button-container {
+            text-align: right;
+        }
+        button {
+            padding: 10px 20px;
+            background-color: #007BFF;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        button:disabled {
+            background-color: #555;
+            cursor: not-allowed;
+        }
+        button:hover:not(:disabled) {
+            background-color: #0056b3;
+        }
+        input[type="checkbox"] {
+            accent-color: #007BFF;
+        }
+    </style>
+</head>
+<body>
+    <div id="consent-form">
+        <h2>Consent Form</h2>
+        <textarea id="consent-text" readonly>
+# Consent for Data Processing 
+The next page, after you pressed agree, will log any and all activity and connection data anonymously to protect you and our infrastructure.
+
+# Responsible Entity for Data Collection:
+    Smallint Infrastructure FuG, represented by aocalux FuG (Christian Prickartz)
+
+# Contact Information:
+    • General Inquiries: support@aocalux.com 
+    • Infrastructure Abuse: report@aocalux.com
+
+# Consent for Data Processing 
+    By continuing, you provide your explicit consent to the processing of your data as outlined below, in accordance with the General Data Protection Regulation (GDPR):
+    1. Purpose of Data Processing:
+        o Logging your IP address and recording your visit to this website anonymously.
+        o Using collected data to verify and secure the connection against automated bots, malicious automation, and other potential security threats.
+    2. Nature of Data Collected:
+        o Your IP address (processed and logged).
+        o Anonymized logs of your visit to this webpage.
+    3. Limitation on Data Collection:
+        o All data collected is manually erased after it has been processed.
+    4. Waiver of Rights:
+        By providing your consent, you explicitly waive any rights you may otherwise have under GDPR or related privacy laws. This includes, but is not limited to, rights of access, rectification, erasure, restriction, data portability, or objection. You also waive the right to withdraw consent at any time or to lodge complaints with supervisory authorities, and any rights to pursue legal action against the responsible body in connection with the data collection.
+
+By accepting this consent form and/or continuing to use this website, you acknowledge that you have read and understood this document and agree to the processing of your data as described, while waiving any associated rights. By questions regarding this document or the processing of your data please contact us at: support@aocalux.com.
+
+
+        </textarea>
+        <div>
+            <input type="checkbox" id="agree-checkbox">
+            <label for="agree-checkbox">I agree to the terms stated above</label>
+        </div>
+        <div class="button-container">
+            <button id="agree-button" disabled>Agree and Continue</button>
+        </div>
+    </div>
+
+    <script>
+        const checkbox = document.getElementById('agree-checkbox');
+        const button = document.getElementById('agree-button');
+
+        checkbox.addEventListener('change', function () {
+            button.disabled = !checkbox.checked;
+        });
+
+        button.addEventListener('click', function () {
+            const urlParams = new URLSearchParams(window.location.search);
+            window.location.href = urlParams.get('next') + "&consent=true";
+        });
+    </script>
+</body>
+</html>
