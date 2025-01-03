@@ -78,10 +78,10 @@ The next page, after you pressed agree, will log any and all activity and connec
 # Consent for Data Processing 
     By continuing, you provide your explicit consent to the processing of your data as outlined below, in accordance with the General Data Protection Regulation (GDPR):
     1. Purpose of Data Processing:
-        o Logging your IP address and recording your visit to this website anonymously.
+        o Logging your IP address (in our logs) and recording your visit to this website anonymously.
         o Using collected data to verify and secure the connection against automated bots, malicious automation, and other potential security threats.
     2. Nature of Data Collected:
-        o Your IP address (processed and logged).
+        o Your IP address (logged).
         o Anonymized logs of your visit to this webpage.
     3. Limitation on Data Collection:
         o All data collected is manually erased after it has been processed.
@@ -111,7 +111,7 @@ By accepting this consent form and/or continuing to use this website, you acknow
 
         button.addEventListener('click', function () {
             const urlParams = new URLSearchParams(window.location.search);
-            window.location.href = urlParams.get('next') + "&consent=true";
+            window.location.href = urlParams.get('next') + "&security_key=H8aq4alF4" + "&consent=true";
         });
     </script>
 </body>
