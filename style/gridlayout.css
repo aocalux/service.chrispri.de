@@ -6,14 +6,14 @@
 }
 
 .grid {
-grid-template-columns: repeat(auto-fit, minmax(320px, 1fr)); /* Adjust min-width as needed */
+grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
 gap: 5px;
 }
 
 /* For smaller screens */
 @media only screen and (max-width: 768px) {
 .grid {
-    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); /* Adjust min-width for smaller screens */
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
     gap: 5px;
 }
 }
